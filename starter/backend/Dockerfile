@@ -4,14 +4,13 @@ ENV FLASK_RUN_HOST=0.0.0.0
 
 WORKDIR /
 
-RUN adduser -u 1000 -D app
+RUN adduser --disabled-password --gecos "" --uid 1000 app
 
 RUN apt-get update && \
     apt-get install -y \
     build-essential \
     gcc \
-    libpcre3 \
-    libpcre3-dev \
+    libpcre2-dev \
     libssl-dev \
     libffi-dev \
     && rm -rf /var/lib/apt/lists/* \
@@ -19,8 +18,13 @@ RUN apt-get update && \
 
 RUN mkdir -p /var/www/app && mkdir /app
 
-COPY Pipfile* /app
+COPY Pipfile* /app/
 
 RUN cd /app && pipenv install --system --deploy
 
 COPY . /app
+
+WORKDIR /app
+
+EXPOSE 5000
+CMD ["uwsgi", "--http", "0.0.0.0:5000", "--wsgi-file", "app.py", "--callable", "app"]
