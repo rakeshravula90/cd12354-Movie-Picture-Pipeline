@@ -182,7 +182,7 @@ All frontend CI jobs completed successfully:
 - ✅ Test Frontend
 - ✅ Build Frontend
 
-![Frontend Continuous Integration](docs/screenshots/frontend-ci-workflow.png)
+![Frontend Continuous Integration](Screenshots/frontend-ci-workflow.png)
 
 ---
 
