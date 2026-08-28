@@ -22,7 +22,6 @@
 - [Deployed Application](#-deployed-application)
 - [CI/CD Flow](#-cicd-flow)
 - [Deployment Verification Commands](#-deployment-verification-commands)
-- [Project Evidence](#-project-evidence)
 - [Final Status](#-final-status)
 - [Conclusion](#-conclusion)
 - [Udacity Copyright and License](#-udacity-copyright-and-license)
