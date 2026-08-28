@@ -134,9 +134,7 @@ cd12354-Movie-Picture-Pipeline/
 │           ├── deployment.yaml
 │           ├── service.yaml
 │           └── kustomization.yaml
-│
-├── docs/
-│   └── screenshots/
+│── screenshots/
 │       ├── frontend-ci-workflow.png
 │       ├── backend-ci-workflow.png
 │       ├── frontend-cd-workflow.png
