@@ -182,7 +182,7 @@ All frontend CI jobs completed successfully:
 - ✅ Test Frontend
 - ✅ Build Frontend
 
-![Frontend Continuous Integration](Screenshots/Frontend CI workflow.png)
+
 
 ---
 
@@ -216,7 +216,7 @@ All backend CI jobs completed successfully:
 - ✅ Test Backend
 - ✅ Build Backend
 
-![Backend Continuous Integration](docs/screenshots/backend-ci-workflow.png)
+
 
 ---
 
@@ -253,7 +253,7 @@ The frontend CD workflow automates the deployment of the React application.
 - ✅ Build and Push Frontend
 - ✅ Deploy Frontend
 
-![Frontend Continuous Deployment](docs/screenshots/frontend-cd-workflow.png)
+
 
 ---
 
@@ -290,7 +290,7 @@ The backend CD workflow automates deployment of the Flask API to Amazon EKS.
 - ✅ Build and Push Backend
 - ✅ Deploy Backend
 
-![Backend Continuous Deployment](docs/screenshots/backend-cd-workflow.png)
+
 
 ---
 
@@ -329,7 +329,7 @@ kubectl get deployment frontend \
   -o jsonpath='{.spec.template.spec.containers[0].image}'
 ```
 
-![Frontend Git SHA Deployment](docs/screenshots/frontend-sha-deployment.png)
+
 
 ---
 
@@ -348,7 +348,6 @@ kubectl get deployment backend \
   -o jsonpath='{.spec.template.spec.containers[0].image}'
 ```
 
-![Backend Git SHA Deployment](docs/screenshots/backend-sha-deployment.png)
 
 ---
 
@@ -371,15 +370,12 @@ The Kubernetes environment contains:
 
 Both application pods were verified as running successfully.
 
-![Kubernetes Pods](docs/screenshots/kubectl-get-pods-output.png)
-
 ---
 
 ## Kubernetes Services
 
 The frontend and backend services were verified as `LoadBalancer` services.
 
-![Kubernetes Services](docs/screenshots/kubectl-get-services-output.png)
 
 ---
 
@@ -391,7 +387,7 @@ The complete Kubernetes resources were verified using:
 kubectl get all
 ```
 
-![Kubernetes Resources](docs/screenshots/kubectl-get-all-output.png)
+
 
 ---
 
@@ -405,7 +401,7 @@ The deployed frontend successfully displays the movie list:
 - Sonic the Hedgehog
 - A Quiet Place
 
-![Movie List](docs/screenshots/frontend-output.png)
+
 
 ---
 
@@ -413,7 +409,7 @@ The deployed frontend successfully displays the movie list:
 
 The deployed frontend successfully displays movie details.
 
-![Movie Details](docs/screenshots/frontend-moviedetails-output.png)
+
 
 ---
 
@@ -421,7 +417,7 @@ The deployed frontend successfully displays movie details.
 
 The backend `/movies` endpoint was successfully verified and returned movie data.
 
-![Backend API](docs/screenshots/backend-api-working-output.png)
+
 
 ---
 
@@ -555,26 +551,7 @@ The final image verification confirmed that both frontend and backend deployment
 
 ---
 
-# 📸 Project Evidence
 
-The `docs/screenshots/` directory contains supporting evidence for the completed project.
-
-| Evidence | Screenshot |
-|---|---|
-| Frontend CI | [Frontend CI](docs/screenshots/frontend-ci-workflow.png) |
-| Backend CI | [Backend CI](docs/screenshots/backend-ci-workflow.png) |
-| Frontend CD | [Frontend CD](docs/screenshots/frontend-cd-workflow.png) |
-| Backend CD | [Backend CD](docs/screenshots/backend-cd-workflow.png) |
-| Frontend Git SHA | [Frontend SHA](docs/screenshots/frontend-sha-deployment.png) |
-| Backend Git SHA | [Backend SHA](docs/screenshots/backend-sha-deployment.png) |
-| Kubernetes Pods | [Pods](docs/screenshots/kubectl-get-pods-output.png) |
-| Kubernetes Services | [Services](docs/screenshots/kubectl-get-services-output.png) |
-| Kubernetes Resources | [All Resources](docs/screenshots/kubectl-get-all-output.png) |
-| Frontend Movie List | [Movie List](docs/screenshots/frontend-output.png) |
-| Movie Details | [Movie Details](docs/screenshots/frontend-moviedetails-output.png) |
-| Backend API | [Backend API](docs/screenshots/backend-api-working-output.png) |
-
----
 
 # 🏆 Final Status
 
